@@ -1,12 +1,14 @@
 # MyHotel
 Repository for manage MyHotelTest
-1-Dentro de cada proyecto se encuentra un readme donde se dan las instrucciones para levantar cada proyecto
-2-En cada uno de los proyectos se agrega una collection de postman para que se puedan hacer pruebas a las API, ya este collection cuanta con ejemplos de llamada a cada una de las API
+
+1-Dentro de cada proyecto se encuentra un readme donde se dan las instrucciones para levantar cada proyecto.
+
+2-En cada uno de los proyectos se agrega una collection de postman para que se puedan hacer pruebas a las API, ya este collection cuanta con ejemplos de llamada a cada una de las API.
 
 
 3-A continuacion la sconsultas de la pregunta numero 2 que tambien se encuentran en el repositorio del proyecto numero 2
 
-3.1Obtener cantidad de empleados dentro de los siguientes segmentos de
+3.1 Obtener cantidad de empleados dentro de los siguientes segmentos de
 sueldo:
 SEGMENTO A: menor a USD 3.500
 SEGMENTO B: mayor o igual a USD 3.500 y menor que USD 8.000
@@ -29,7 +31,7 @@ GROUP BY
     WHEN SALARY >= 8000 THEN 'SEGMENTO C'
   END;
 ```
-3.2Utilizando la tabla “departments” se requiere realizar la misma agrupación
+3.2 Utilizando la tabla “departments” se requiere realizar la misma agrupación
 de segmentos de sueldo, pero por departamento
 
 ```
@@ -41,7 +43,7 @@ FROM employees e
 JOIN departments d ON e.DEPARTMENT_ID = d.DEPARTMENT_ID
 GROUP BY d.DEPARTMENT_NAME;
 ```
-3.3Información del empleado con mayor sueldo de cada departamento.
+3.3 Información del empleado con mayor sueldo de cada departamento.
 
 ```
 SELECT d.DEPARTMENT_NAME, e.FIRST_NAME
