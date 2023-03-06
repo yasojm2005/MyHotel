@@ -18,7 +18,7 @@ In the project root, JHipster generates configuration files for tools like git, 
 Before you can build this project, you must install and configure the following dependencies on your machine:
 
 1. For run this proyect you need to configure  a database for do that ,you need to modify application-dev.yml and configure 
-your database , if you dont have a database in your environment you can use the database provide under docker file
+your database you only need to create a empy database, data is supply using liquibase, if you dont have a database in your environment you can use the database provide under docker file
  ```
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
